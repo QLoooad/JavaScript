@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    p{
+      font-size: 16px; /*기본사이즈 h1(32) p(16)*/
+      font-family: MalgunGothic, Apple Gothic, sans-serif;
+      /*앞부터 해당 사용자의 환경에 맞춰서 적용
+        마지막은 모두 없을경우를 대비해 적어둠 (serif, sans-serif, monospace 등)*/
+      font-style: italic; /*폰트 기울기 등 스타일*/
+      font-weight: bold; /*숫자도 가능(폰트마다 적용 여부 확인)*/
+      text-align: center; /*글자 정렬 (블록태그에만 적용 가능 인라인 불가능)*/
+      line-height: 24px; 
+      /*글자 높이(잘 안씀, 글자를 버튼 만들때 사용 자주함[예제 1번])*/
+      }
+    a{
+      text-decoration: none; /*하이퍼링크 밑줄 제거*/
+      color: slateblue;
+    }
+    a:hover{ /*마우스 올렸을때*/
+      color: blue
+    }
+
+    div.예제1번{
+      width: 100px;
+      height: 100px;
+      background-color: cadetblue;
+      border-radius: 50px;
+      text-align: center;
+      line-height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h1>hello world</h1>
+  <p>Consectetur labore eu aliquip amet eiusmod labore proident incididunt anim anim proident sint. Et magna sint eiusmod consectetur incididunt dolore consectetur ipsum cillum et nulla consectetur. Non sit laboris in dolor dolor minim excepteur sint pariatur ut laborum eu aliquip ea. Consectetur nisi laborum esse magna ad. Esse ex commodo do laborum nulla adipisicing esse eu nostrud labore ea ipsum. Elit sunt adipisicing dolor culpa. Magna nulla consectetur veniam ut pariatur minim eiusmod laboris nostrud quis do laboris pariatur id.</p>
+  <div class="예제1번">Button</div>
+  <h1><a href="#">Click</a></h1>
+</body>
+</html>

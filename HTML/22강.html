@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    body{
+      width: 700px;
+      margin: 0 auto;
+    }
+    .container{
+      display: flex; /* overflow: hidden; 과 같이 하나만 씀(구버전 익스플로러에는 적용x)*/
+    }
+    /* .container::after{   (구버전은 이렇게)
+        clear: both;
+        content: "";
+        display: block;
+    } */
+    .aside{
+      width: 380px;
+      float: left;
+    }
+    .section{
+      width: 300px;
+      float: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Header</h1>
+  </div>
+  <div class="container">
+    <div class="aside">
+      <h1>Aside</h1>
+      <p>Consequat non excepteur nostrud esse ullamco et eiusmod id ea laboris nostrud. Consequat quis voluptate consequat qui dolor sunt magna. Laboris minim quis magna aliquip nulla aliqua qui ullamco. Irure velit non ut tempor nulla sit duis eiusmod magna. Incididunt aliquip amet tempor proident nulla labore fugiat et nostrud dolor. Ex minim quis pariatur ad in amet ea nostrud in ullamco enim qui. Commodo enim nulla est Lorem.</p>
+    </div>
+    <div class="section">
+      <h1>Section</h1>
+      <p>Sit aliqua et id commodo ipsum duis elit ut elit proident sunt tempor proident magna. Commodo qui pariatur reprehenderit voluptate minim cupidatat commodo voluptate ad reprehenderit. Aliquip fugiat consectetur eiusmod nisi. Ut do id pariatur occaecat anim.</p>
+    </div>
+  </div>
+  <div class="footer">
+    Minim sint Lorem id anim sint est deserunt. Ullamco cupidatat quis voluptate magna qui amet aliqua cillum eiusmod laborum ipsum officia ut. Occaecat qui proident dolore esse et et amet deserunt eiusmod pariatur duis nisi commodo laboris. Deserunt sunt irure officia excepteur elit magna deserunt nostrud. Cupidatat ea commodo irure adipisicing fugiat aliquip deserunt do ad aute consequat.
+  </div>
+</body>
+</html>

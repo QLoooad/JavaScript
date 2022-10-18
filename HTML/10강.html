@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="">
+    <label for="id">ID</label>
+    <input id="id" type="text" value="아이디"><br> 
+
+    <label for="password">PW</label>
+    <input id="password" type="password" value="패스워드">
+    <input type="submit" value="로그인"> <!--버튼-->
+    <!--라벨의 for은 인풋의 id가 있어야지 활성화
+      [서로 같은 이름을 가져야 선택시 자동으로 커서옮김]-->
+      <!--타입에 password로 지정시 가려진 텍스트로 표시-->
+    <br><br>
+
+    <!---->
+    <label for="">허윤이 2022년에 새로 구입한 스마트폰이 맞는 것은?</label><br>
+    <label for="허윤폰1">갤럭시S21</label>
+    <input type="checkbox" name="1" id="허윤폰1"><br>
+    <label for="허윤폰2">아이폰13미니</label>
+    <input type="checkbox" name="1" id="허윤폰2"><br>
+    <label for="허윤폰3">아이폰13</label>
+    <input type="checkbox" name="1" id="허윤폰3"><br>
+    <label for="허윤폰4">갤럭시Z플립</label>
+    <input type="checkbox" name="1" id="허윤폰4">
+    <br><br>
+
+    <label for="">성별</label><br>
+    <label for="남성">남성</label>
+    <input type="radio" name="gender" id="남성">
+    <label for="여성">여성</label>
+    <input type="radio" name="gender" id="여성">
+    <label for="기타">기타</label>
+    <input type="radio" name="gender" id="기타"><br>
+    <input type="submit" value="확인">
+    <!--단일 선택을 원할 시 name속성을 같은 것으로 설정[다를 시 다중선택 됨]
+        radio는 성별과 같은 단일 선택 체크박스-->
+  </form>
+</body>
+</html>

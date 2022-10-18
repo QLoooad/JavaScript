@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    /* 백그라운드 색 입히는방법*/
+    /* 1번
+    body{
+      background: blueviolet;
+    } */
+    
+    /*2번
+    html, body{
+      margin: 0; padding: 0;
+      height: 100%;
+    }
+    div{
+      background: burlywood;
+      height: 100%;
+    }*/
+
+    /*3번*/
+    div{
+      background: grey ;
+      height: 100%;
+      position: absolute;
+      left: 0; top: 0; bottom: 0; right: 0;
+    }
+    .ellipsis{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    /*.ellipsis 지정한 글자수를 넘을시 ...으로 대처*/
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Hello World...!</h1>
+    <p class="ellipsis">Ut irure non irure eiusmod ad quis ex fugiat adipisicing consectetur laboris reprehenderit. Ex magna dolore veniam eu laborum officia cupidatat voluptate. Duis do nisi esse reprehenderit non non reprehenderit. Eiusmod duis ut aliquip anim irure. Minim quis consequat cupidatat sint pariatur enim in adipisicing.Commodo cupidatat esse deserunt velit sit tempor nostrud eiusmod. Excepteur id magna culpa ea magna labore culpa. Pariatur enim non enim aliquip ipsum qui Lorem aliqua cillum nisi laboris. Id ullamco enim amet do ex non ea exercitation excepteur ut ea est occaecat id. Sint occaecat ullamco culpa ad cupidatat dolore.</p>
+  </div>
+</body>
+</html>
+<!--전체 화면 구성-->

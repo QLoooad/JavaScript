@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <!--  font-family: 'Gugi', cursive;
+        font-family: 'Nanum Gothic', sans-serif;  -->
+  <style>
+    .container div{border: solid 1px black; margin-top: 10px; margin-bottom: 10px;}
+    *{font-family: 'Nanum Gothic', sans-serif;}
+    .header>h1{font-family: 'Gugi', cursive;}
+    .header{height: 100px; position: relative;}
+    .header h1{position: absolute; left: 8px; top: 20px;}
+    ul{overflow: hidden;}
+    li{float: left; list-style: none;}
+    .container{width: 1000px; margin: 0 auto; position: relative; }
+    .content{ overflow: hidden; }
+    .section{ width: 700px; float: left; }
+    .aside{ width: 280px; float: right; }
+    .gnd{ right: 0px; top: 0px; position: absolute; }
+    .lnd{ right: 0px; bottom: 0px; position: absolute; }
+  </style>
+  <style>
+    input{
+      display: none;
+    }
+    input:nth-of-type(1) ~ div:nth-of-type(1){
+      display: none;
+    }
+    input:nth-of-type(2) ~ div:nth-of-type(2){
+      display: none;
+    }
+    input:nth-of-type(1):checked ~ div:nth-of-type(1){
+      display: block;
+    }
+    input:nth-of-type(2):checked ~ div:nth-of-type(2){
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Lorem Ipsum Door control motion</h1>
+      <div class="gnd">
+        <ul>
+          <li>Lorem</li>
+          <li>Ipsum</li>
+          <li>Door</li>
+          <li>control</li>
+          <li>motion</li>
+        </ul>
+      </div>
+      <div class="lnd">
+        <ul>
+          <li>Lorem</li>
+          <li>Ipsum</li>
+          <li>Door</li>
+          <li>control</li>
+          <li>motion</li>
+          <li>Sit</li>
+          <li>Dolor</li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <div class="section">
+        <article>
+          <h1>Lorem Ipsum Door control motion</h1>
+          <p>Nulla elit dolor dolore cupidatat minim consequat est deserunt ut exercitation excepteur fugiat. Nisi eiusmod ipsum magna quis dolore non officia. Id sit ipsum dolor deserunt eu minim velit ad do. Tempor irure consectetur consequat nostrud Lorem excepteur aliqua esse anim duis dolor.</p>
+          <p>Magna consequat voluptate amet fugiat sit. Enim esse pariatur tempor ullamco commodo laboris exercitation cillum. Officia laborum dolor veniam ea. Mollit adipisicing veniam tempor ea ipsum dolore voluptate. Anim dolor velit excepteur cupidatat. Fugiat ut irure ex sint sunt aliqua sint anim. Irure sunt ut veniam dolor sit reprehenderit sunt anim.</p>
+          <p>Ut aute Lorem irure occaecat esse duis. Qui sit elit eiusmod incididunt pariatur quis anim anim reprehenderit anim labore ex non. Aute quis veniam dolore esse et excepteur pariatur. Aliquip fugiat labore tempor proident nostrud sunt tempor ipsum elit enim ullamco incididunt mollit. Et nulla ea irure reprehenderit aliquip anim enim elit ut excepteur. Nostrud nulla esse et elit laboris magna ad. Dolore qui sit aliqua sint occaecat.</p>
+        </article>
+      </div>
+      <div class="aside">
+        <label for="tab-1">TAB1</label>
+        <label for="tab-2">TAB2</label>
+        <input type="radio" name="tab" id="tab-1" checked="checked">
+        <input type="radio" name="tab" id="tab-2">
+        <div class="tab-item">Officia esse id Lorem dolor adipisicing sunt quis. Dolore enim eu amet adipisicing Lorem quis esse Lorem in et occaecat ea minim. Laborum reprehenderit aute consequat exercitation cillum consectetur.</div>
+        <div class="tab-item">Ex occaecat anim est culpa fugiat non ut pariatur. Labore proident fugiat adipisicing tempor elit aute. Amet duis magna ullamco irure proident proident aliquip amet cillum. Anim qui mollit tempor laboris laborum. Magna anim reprehenderit consequat et enim amet dolore ut. Anim in ex dolor culpa eu cillum excepteur quis cillum. Ipsum officia quis anim elit commodo mollit.</div>
+      </div>
+    </div>
+    <div class="footer">Non ad cillum qui est esse. Ipsum ad elit anim qui voluptate ullamco consequat proident. Reprehenderit nostrud ut officia irure velit ullamco ad pariatur.</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    .box{
+      width: 100px; height: 100px;
+      position: absolute; /*absolute는 기본html제공 위치값 무시, 
+                            이후 입력되는 죄표를 기준으로 적용*/
+    }
+    .red{
+      background-color: red;
+      left: 0px;
+      top: 0px; /*redbox가 어긋나있는이유는 body태그에 기본적으로 있는
+                    margin,padding 때문*/
+                  /*박스의 크기(width,height)를 조절하지 않고 
+                  left,top,right,bottom을 사용하여 크기를 조절할수있다*/
+    }
+    .green{
+      background-color: green;
+      left: 0px;
+      top: 0px;
+    }
+    .blue{
+      background-color: blue;
+      left: 0px;
+      top: 0px;
+    }
+    /*  z-index: 9999;
+       (숫자 값에 따라서 z축의 위치 즉 어느것이 위로 올라오게 될것인지를 정해준다)
+        기본적인 위치는 body에 쓰인 순서대로 정렬된다*/
+    .container{
+      position: relative;
+      height: 100px;
+      overflow: scroll;
+    } /*위치값이 없기에 큰 틀을 만들고 relative로 설정후 얼마나 차지하고있는지에 대한
+        height을 설정해줘야 아래h1태그가 정상적으로 표현된다*/
+
+      /*아니면 p태그로 글자를 넣어서 h1태그를 밀어줘야한다
+        하지만 이렇게 하면 글자가 곂치기에 이땐 overflow를 사용(hidden,scroll 등)*/
+  </style>
+</head>
+<body>
+  <h1>hello hello hello</h1> <!--absolute가 설정돼있다면 위치가 없는것 취급-->
+  <div class="container">
+    <p>sasssssssssssasssssssssssssasssssssssssssassssssssssssssssss</p>
+    <p>sasssssssssssasssssssssssssasssssssssssssassssssssssssssssss</p>
+    <p>sasssssssssssasssssssssssssasssssssssssssassssssssssssssssss</p>
+    <p>sasssssssssssasssssssssssssasssssssssssssassssssssssssssssss</p>
+    <p>sasssssssssssasssssssssssssasssssssssssssassssssssssssssssss</p>
+    <p>sasssssssssssasssssssssssssasssssssssssssassssssssssssssssss</p>
+    <p>sasssssssssssasssssssssssssasssssssssssssassssssssssssssssss</p>
+    <p>sasssssssssssasssssssssssssasssssssssssssassssssssssssssssss</p>
+    <p>sasssssssssssasssssssssssssasssssssssssssassssssssssssssssss</p>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+    <div class="box gray"></div>
+  </div>
+  <h1>hello hello hello </h1>
+</body>
+</html>
+
+<!--자식을 absolute로 설정을 했다면 부모를 relative와 height를 무조껀 추가해야한다-->

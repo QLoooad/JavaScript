@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <ol>과일
+    <li>바나나</li>
+    <li>딸기</li>
+    <li>수박</li>
+    <li>키위</li>
+  </ol>
+  <li>식품</li>
+  <ul>
+    <li>연근</li>
+    <ul>
+      <li>감자</li>
+      <ul>
+        <li>고구마</li>
+      </ul>
+    </ul>
+
+    <table></table> <!--표 자체를 의미-->
+    
+     <tr></tr> <!--행[가로]-->
+    
+     <th></th> <!--제목-->
+    
+     <td></td> <!--내용-->
+
+     <br /> <hr/> <br />
+    <table>
+      <tr>
+        <th>이름</th>
+        <th>나이</th>
+      </tr>
+      <tr>
+        <td>홍길동</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <td>김아무개</td>
+        <td>15</td>
+      </tr>
+    </table>
+    <br /> <hr/> <br />
+    <table border="1"> <!-- border[테두리] -->
+      <tr>
+        <th colspan="2">이름 및 나이</th> <!-- colspan[차지하는 행(가로) 칸수]-->
+      </tr>                               <!-- rowspan[차지하는 열(세로) 칸수]-->
+      <tr>
+        <td>홍길동</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <td>김아무개</td>
+        <td>15</td>
+      </tr>
+    </table>
+
+    <br /> <hr/> <br />
+
+    <table border="1">
+      <tr>
+        <th></th>
+        <th>이름</th>
+        <th>나이</th>
+      </tr>
+      <tr>
+        <th rowspan="2">남성</th>
+        <td>홍길동</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <td>김아무개</td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <th rowspan="2">여성</th>
+        <td>성춘향</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>김엘리자베스</td>
+        <td>20</td>
+      </tr>
+    </table>
+    <br /> <hr/> <br />
+    <table border="1">
+      <tr>
+        <th colspan="3">가로제목</th>
+        <th rowspan="3">세로제목</th>
+      </tr>
+      <tr>
+        <td>힝힝</td>
+        <td rowspan="2">세로힝힝</td>
+        <td>홍홍</td>
+      </tr>
+      <tr>
+        <td>힝힝</td>
+        <td>홍홍</td>
+      </tr>
+    </table>
+
+    <br /> <hr/> <br />
+
+    <table border="1">
+      <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+      </tr>
+    </table>
+
+</body>
+
+</html>
+
+<!--  목록 태그 : ol, ul, li
+목록
+
+  순서 있는 목록 : ol [ordered list]
+
+    1. 바나나 <<리스트 : li
+    2. 딸기
+    3. 수박
+    4. 키위
+  
+  순서 없는 목록 : ul [unordered lits]
+  
+    - 바나나  <<리스트 : li
+    - 딸기
+    - 수박
+    - 키위
+
+목록의 리스트 : li [list item]  
+
+-->

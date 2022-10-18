@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!--익스플로너 사용 불가-->
+  <title>Document</title>
+  <style>
+    .container{
+      width: 960px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 8fr; /* % or fr(2대8), 가로비율*/ 
+      /*grid-template-rows: 500px 1000px ; /*세로 높이*/
+      grid-gap: 10px;
+      grid-template-areas: /* 이런 셀방식으로 위치해라*/
+          'header header'
+          'aisde section'
+          'footer footer';
+    }
+    .container > div {
+      background-color: green;
+    }
+    .header {grid-area: header}
+    .aside  {grid-area: aside}
+    .section{grid-area: section}
+    .footer {grid-area: footer}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Header</h1>
+      <p>Reprehenderit duis amet dolore exercitation. Sit magna duis id deserunt aliquip enim nisi esse ipsum ut labore. Do non pariatur tempor Lorem enim. Amet tempor non quis anim laboris id est dolor fugiat Lorem amet tempor. Duis laborum ea et voluptate Lorem sit anim culpa commodo voluptate. Exercitation ad dolore et sunt.</p>
+    </div>
+    <div class="aside">
+      <h1>Aside</h1>
+      <p>Eiusmod tempor id amet veniam laborum. Ut nostrud qui aliqua ipsum minim dolore id dolor laborum sit in. In cillum consectetur ut mollit est. Tempor aliqua elit tempor culpa sit consequat enim quis eu. Laboris veniam ut ullamco culpa laborum ipsum. Laborum qui id veniam sit pariatur cillum duis cillum amet.</p>
+    </div>
+    <div class="section">
+      <h1>Section</h1>
+      <p>Ipsum ipsum dolore do labore consequat magna esse laborum. Laboris sunt ex sint ipsum adipisicing quis esse deserunt nisi ea minim. Enim non sint ullamco culpa. Culpa proident magna veniam voluptate aliquip aliquip.</p>
+    </div>
+    <div class="footer">
+      <h1>Footer</h1>
+      <p>Ullamco sint qui incididunt ad dolore mollit. Veniam ea mollit tempor do nulla labore. Aliqua enim eu nostrud id sit ullamco veniam ea id non occaecat. Laboris consectetur commodo dolore laborum fugiat pariatur irure irure. Amet ea id sint labore sit occaecat. Ea incididunt ad id laborum nostrud laborum eiusmod proident veniam culpa culpa. Elit qui in sint id aute esse veniam commodo veniam sunt ut veniam occaecat ex.</p>
+    </div>
+  </div>
+</body>
+</html>

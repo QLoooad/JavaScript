@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    /* (제일 상위에)중앙정렬 너비 지정, 마진0auto*/
+    .container { width: 960px; margin:0 auto;}
+    .header {height: 20px; background-color: red;}
+    .nav {height: 20px; background-color: green;}
+    .footer {height: 50px; background-color: blue;}
+    /*오버플로우 히든 적용이유[안넣으면 footer가 위로 올라옴]*/
+    /*부모에 오버플로우히든 자식에 너비 주고 플롯트 지정 필수*/
+    .center{
+      overflow: hidden;
+    }
+    .aside{
+      height: 200px;
+      width: 30%;
+      background-color: blueviolet;
+      float: left;
+    }
+    .section{
+      height: 200px;
+      width: 70%;
+      background-color: brown;
+      float: left;
+    }
+    h1{margin: 0}
+    /* 중앙정렬 margin: 0 auto; (숫자 부분은 위아래 여백)*/
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header"></div>
+    <div class="nav"></div>
+    <div class="center">
+      <div class="aside">Officia dolore sint labore aute cillum id pariatur. Et ipsum sint amet pariatur mollit laborum dolor commodo do id mollit nulla commodo. Veniam pariatur do qui proident in et.</div>
+      <div class="section">Nisi irure magna magna in eiusmod quis. Commodo sunt laborum officia qui culpa ex labore exercitation ex exercitation. Est aliquip ea ut enim laboris.</div>
+    </div>
+    <div class="footer">
+      <h1>FOOTER</h1>
+    </div>
+  </div>
+</body>
+</html>

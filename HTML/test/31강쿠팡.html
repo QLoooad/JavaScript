@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Document</title>
+  <!--초기화-->
+  <style>
+    *{margin: 0; padding: 0; font: normal 12px 'Dotum'}
+    body{ font-family: 'Helvetica', sans-serif; width: 980px; margin: 0 auto; }
+    ul{ list-style: none;}
+    a{ text-decoration: none;}
+    img{border: 0;}
+  </style>
+  <!--헤더-->
+  <style>
+    #header{position: relative;
+    height: 75px;}
+    #logo{position: absolute;
+    left: 15px; top: 10px;}
+    #logo_menu{position: absolute;
+    right: 0px; top: 10px;}
+  </style>
+  <!--global_aside-->
+  <style>
+    body{position: relative;}
+    #global_aside>.side{
+      position: absolute; left: 990px; top: 75px; width: 90px;}
+      #global_aside>.side>a{display: block; margin-bottom: 5px;}
+    /* 블록을 주는 이유는 마진을 주기위해(사이드 그림마다 간격)*/
+    /* 블록 안주면 마진이 먹지 않는다.*/
+  </style>
+  <!--top_gnb-->
+  <style>
+    #top_gnb{overflow: hidden;}
+    #top_gnb>div.menu {
+      float: left; 
+      width: 140px; height: 50px;
+      background: url('22.png');}
+    #top_gnb>div.item_1{background-position: -1px -1px ;}
+    #top_gnb>div.item_2{background-position: -1px -53px ;}
+    #top_gnb>div.item_3{background-position: -1px -105px ;}
+    #top_gnb>div.item_4{background-position: -1px -157px ;}
+    #top_gnb>div.item_5{background-position: -1px -209px ;}
+    #top_gnb>div.item_6{background-position: -1px -261px ;}
+    #top_gnb>div.item_7{background-position: -1px -313px ;}
+
+    #top_gnb>div.item_1:hover{background-position: -1px -365px ;}
+    #top_gnb>div.item_2:hover{background-position: -1px -417px ;}
+    #top_gnb>div.item_3:hover{background-position: -1px -469px ;}
+    #top_gnb>div.item_4:hover{background-position: -1px -521px ;}
+    #top_gnb>div.item_5:hover{background-position: -1px -573px ;}
+    #top_gnb>div.item_6:hover{background-position: -1px -625px ;}
+    #top_gnb>div.item_7:hover{background-position: -1px -677px ;}
+
+    #top_gnb>div.item_1_active{background-position: -1px -365px ;}
+    #top_gnb>div.item_2_active{background-position: -1px -417px ;}
+    #top_gnb>div.item_3_active{background-position: -1px -469px ;}
+    #top_gnb>div.item_4_active{background-position: -1px -521px ;}
+    #top_gnb>div.item_5_active{background-position: -1px -573px ;}
+    #top_gnb>div.item_6_active{background-position: -1px -625px ;}
+    #top_gnb>div.item_7_active{background-position: -1px -677px ;}
+  </style>
+  <!--bottom_gnb-->
+  <style>
+    #bottom_gnb{overflow: hidden;}
+    #bottom_gnb>div.menu {
+      float: left; 
+      width: 98px; height: 80px;
+      background: url('22.png');}
+    #bottom_gnb>div.item_1{background-position: -1px -729px ;}
+    #bottom_gnb>div.item_2{background-position: -1px -811px ;}
+    #bottom_gnb>div.item_3{background-position: -1px -893px ;}
+    #bottom_gnb>div.item_4{background-position: -1px -975px ;}
+    #bottom_gnb>div.item_5{background-position: -1px -1057px ;}
+    #bottom_gnb>div.item_6{background-position: -1px -1139px ;}
+    #bottom_gnb>div.item_7{background-position: -1px -1221px ;}
+    #bottom_gnb>div.item_8{background-position: -1px -1303px ;}
+    #bottom_gnb>div.item_9{background-position: -1px -1385px ;}
+    #bottom_gnb>div.item_10{background-position: -1px -1467px ;}
+
+    #bottom_gnb>div.item_1:hover{background-position: -1px -1549px ;}
+    #bottom_gnb>div.item_2:hover{background-position: -1px -1631px ;}
+    #bottom_gnb>div.item_3:hover{background-position: -1px -1713px ;}
+    #bottom_gnb>div.item_4:hover{background-position: -1px -1795px ;}
+    #bottom_gnb>div.item_5:hover{background-position: -1px -1877px ;}
+    #bottom_gnb>div.item_6:hover{background-position: -1px -1959px ;}
+    #bottom_gnb>div.item_7:hover{background-position: -1px -2041px ;}
+    #bottom_gnb>div.item_8:hover{background-position: -1px -2123px ;}
+    #bottom_gnb>div.item_9:hover{background-position: -1px -2205px ;}
+    #bottom_gnb>div.item_10:hover{background-position: -1px -2287px ;}
+
+    #bottom_gnb>div.item_1_active{background-position: -1px -1549px ;}
+    #bottom_gnb>div.item_2_active{background-position: -1px -1631px ;}
+    #bottom_gnb>div.item_3_active{background-position: -1px -1713px ;}
+    #bottom_gnb>div.item_4_active{background-position: -1px -1795px ;}
+    #bottom_gnb>div.item_5_active{background-position: -1px -1877px ;}
+    #bottom_gnb>div.item_6_active{background-position: -1px -1959px ;}
+    #bottom_gnb>div.item_7_active{background-position: -1px -2041px ;}
+    #bottom_gnb>div.item_8_active{background-position: -1px -2123px ;}
+    #bottom_gnb>div.item_9_active{background-position: -1px -2205px ;}
+    #bottom_gnb>div.item_10_active{background-position: -1px -2287px ;}
+  </style>
+  <!--detail_list-->
+  <style>
+    #detail_list{
+      overflow: hidden;
+      background-color: #3B414D;
+      padding: 10px;
+      padding-bottom: 15px;
+    }
+    #detail_list > ul > li {
+      height: 13px;
+      margin-top: 5px;
+      padding: 3px 5px;
+      color: #f3f3f3;
+
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    #detail_list > ul > li .header{
+      padding-left: 10px;
+    }
+    #detail_list > ul > li > p {
+      font-weight: bold;
+      color: #48c5ff;
+    }
+    #detail_list > ul {
+      float: left;
+      width: 192px;
+    }
+  </style>
+<!--main content-->
+<style>
+  #main_content{ margin-top: 10px; }
+  #product_section {
+    overflow: hidden; 
+    margin-top: 5px;
+  }
+  #product_section > #product_article { 
+    float: left;
+    width: 795px;  
+  }
+  #product_section > #product_aside {
+    float: right; 
+    width: 170px;
+    padding-top: 0px;
+    padding: 5px;
+  }
+</style>
+</head>
+<body>
+  <div id="header">
+    <div id="logo">
+      <a href="#"><img src="title.png"></a>
+    </div>
+    <div id="logo_menu">
+      <span><a href="#">로그인</a></span>
+      <span><a href="#">회원가입</a></span>
+      <span><a href="#">고객센터</a></span>
+    </div>
+  </div>
+  <div id="global_aside">
+    <div class="side">
+      <a><img src="http://placehold.it/90x160"></a>
+      <a><img src="http://placehold.it/90x160"></a>
+      <a><img src="http://placehold.it/90x160"></a>
+      <a><img src="http://placehold.it/90x160"></a>
+      <a><img src="http://placehold.it/90x160"></a>
+      <a><img src="http://placehold.it/90x160"></a>
+      <a><img src="http://placehold.it/90x160"></a>
+      <a><img src="http://placehold.it/90x160"></a>
+      <a><img src="http://placehold.it/90x160"></a>
+      <a><img src="http://placehold.it/90x160"></a>
+    </div>
+  </div>
+  <nav id="top_gnb">
+    <div class="menu item_1_active"></div>
+    <div class="menu item_2"></div>
+    <div class="menu item_3"></div>
+    <div class="menu item_4"></div>
+    <div class="menu item_5"></div>
+    <div class="menu item_6"></div>
+    <div class="menu item_7"></div>
+  </nav>
+  <nav id="bottom_gnb">
+    <div class="menu bottom item_1"></div>
+    <div class="menu bottom item_2"></div>
+    <div class="menu bottom item_3"></div>
+    <div class="menu bottom item_4"></div>
+    <div class="menu bottom item_5"></div>
+    <div class="menu bottom item_6"></div>
+    <div class="menu bottom item_7"></div>
+    <div class="menu bottom item_8"></div>
+    <div class="menu bottom item_9_active"></div>
+    <div class="menu bottom item_10"></div>
+  </nav>
+<div id="detail_list">
+  <ul class="column1">
+    <li>
+      <p class="header">게임용 노트북</p>
+    </li>
+    <li>노트1북</li>
+    <li>노트2북</li>
+    <li>노트3북</li>
+    <li>
+      <p class="header">울트라북</p>
+    </li>
+    <li>울트라맨북</li>
+    <li>울트라걸북</li>
+    <li>울트라차일드북</li>
+    <li>울트라영북</li>
+    <li>울트라올드북</li>
+  </ul>
+  <ul class="column2">
+    <li>울트라북북스</li>
+    <li>
+      <p class="header">노트북 가방</p>
+    </li>
+    <li>보노보노 가방</li>
+    <li>노트남 가방</li>
+    <li>노트동 가방</li>
+    <li>
+      <p class="header">받침대/쿨러</p>
+    </li>
+    <li>스틸받침대</li>
+    <li>개쩌는 쿨러</li>
+    <li>깔쌈한 쿨러</li>
+    <li>킹갓제네럴엠페러 쿨러</li>
+  </ul>
+  <ul class="column3">
+    <li>
+      <p class="header">노트북 보호 용품</p>
+    </li>
+    <li>Node.js 방열 보호판</li>
+    <li>안드로이드</li>
+    <li>초특가 자바스크립트 보호대</li>
+    <li>기계 학습을 사용한 보호대</li>
+    <li>
+      <p class="header">맥북</p>
+    </li>
+    <li>원고를 작성하는 맥북 에어</li>
+    <li>레티나 디스플레이</li>
+    <li>
+      <p class="header">노트북 보호 용품</p>
+    </li>
+    <li>물건 이름 만들기 힘들어</li>
+  </ul>
+  <ul class="column4">
+    <li>우주 방사능 보호 코팅제</li>
+    <li>자체 중력 생성 장치</li>
+    <li>초특가</li>
+    <li>노트북 투명화 스프레이</li>
+    <li>고압 전류</li>
+    <li>
+      <p class="header">노트북 보조 용품</p>
+    </li>
+    <li>초특가</li>
+    <li>공간 균열 장치</li>
+    <li>프로그램 만드는 프로그램</li>
+    <li>초특가</li>
+  </ul>
+  <ul class="column5">
+    <li>미오 베이스 장치</li>
+    <li>공간을 지배하는자</li>
+    <li>현금 할인</li>   
+    <li>
+      <p class="header">외장 하드 디스크</p>
+    </li>
+    <li>토시바 500GB 외장 하드</li>
+    <li>초공간 통합 무한 메모리</li>
+    <li>모던 웹을 위한 Node.js 프로그래밍</li>
+    <li>모던 웹을 위한 JavaScript + jQuery 입문</li>
+    <li>윤인성</li>
+    <li>이름 만들기 힘들어요</li>
+  </ul>
+</div>
+<div id="main_content">
+  <figure id="product_image">
+    <img src="http://placehold.it/980x440" width="980px" height="440px">
+  </figure>
+  <section id="product_section">
+    <article id="product_article">
+      <img src="http://placehold.it/795x400" width="795px" height="400px">
+      <img src="http://placehold.it/795x400" width="795px" height="400px">
+      <img src="http://placehold.it/795x400" width="795px" height="400px">
+    </article>
+    <aside id="#product_aside">
+      <a href="#"><img src="http://placehold.it/170x200" width="170px" height="200px"></a>
+      <a href="#"><img src="http://placehold.it/170x200" width="170px" height="200px"></a>
+      <a href="#"><img src="http://placehold.it/170x200" width="170px" height="200px"></a>
+      <a href="#"><img src="http://placehold.it/170x200" width="170px" height="200px"></a>
+      <a href="#"><img src="http://placehold.it/170x200" width="170px" height="200px"></a>
+      <a href="#"><img src="http://placehold.it/170x200" width="170px" height="200px"></a>
+      <a href="#"><img src="http://placehold.it/170x200" width="170px" height="200px"></a>
+      <a href="#"><img src="http://placehold.it/170x200" width="170px" height="200px"></a>
+      <a href="#"><img src="http://placehold.it/170x200" width="170px" height="200px"></a>
+      <a href="#"><img src="http://placehold.it/170x200" width="170px" height="200px"></a>
+    </aside>
+  </section>
+</div>
+</body>
+</html>

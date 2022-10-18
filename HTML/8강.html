@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  절대 경로
+  >서울특별시 ㅁㅁ구 ㅁㅁ동 ㅁㅁ아파트 ㅁㅁ동 ㅁㅁㅁ호
+  ex) http://placehold.it/200x200
+
+  상대 경로
+  >내 앞
+  >내 앞에서 오른쪽
+  ex) /test/example/a.jpg [폴더 주소]
+
+  절대경로
+  <img src="http://placehold.it/200x200" alt="이미지 없음">
+    <!-- 이미지 -->
+  <img src="http://placehold.it/200x200" alt="감자">
+    <!-- scr[이미지주소], alt[이미지 불러오기 실패 시 문구 or 이미지 설명]-->
+
+  상대경로[컴퓨터 속 경로, html 파일 기준]
+
+
+  .   : 현재 위치
+  ..  : 상위 위치
+
+<!--동일 위치 사진-->
+  <img src="a.jpg"> 
+  <img src="./a.jpg">
+
+<!--하위 폴더 위치-->
+  <img src="이미지/a.jpg"> 이미지라는 이름의 폴더의 a 이미지
+  <img src="./이미지/a.jpg"> 8강이 들어있는 폴더의, 이미지라는 이름의 폴더 안에 a 이미지
+
+<!--상위 폴더 위치-->
+  <img src="../a.jpg"> 상위 위치에 있는 a 이미지
+
+</body>
+</html>

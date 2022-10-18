@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    span{
+      margin: 20px;
+      padding: 10px;
+      width: 100px;
+      height: 100px;
+    }
+    .inline-block{
+      display: inline-block;
+    }
+    div.마진-패딩{
+      width: 100px; height: 100px;
+      background-color: red;
+
+      border: 30px solid black;
+      margin: 20px; padding: 60px;
+    }
+    h1{
+      display: none;
+    }
+    h2{
+      visibility: hidden;
+    }
+    .black{
+      position: fixed;
+      left: 0; right: 0; top: 0; bottom: 0;
+      background: rgba(1, 1, 1, 0.9);
+      opacity: 0.3;
+    }
+  </style>
+  <!--rgba의 a와 opacity는 같음[투명도]-->
+  <!--마진은 해당블록의 완전 밖의 간격-->
+  <!--패딩은 마진 안쪽의 간격(바로 안쪽이 아닐수도 있음[border])-->
+  <!--display 속성의 none는 완전히 블록자체를 없앰(영구밴)-->
+  <!--visibility는 보이지 않게만 하는 것, 없애는것은 아님(티모은신)-->
+</head>
+<body> <!--span은 라인 div는 블록-->
+  <div class="black"></div>
+  <span>hello</span>
+  <span>hello</span>
+  <span>hello</span>
+  <h1>hello</h1>
+  <h2>hello</h2>
+  <span class="inline-block">hello</span>
+  <span class="inline-block">hello</span>
+  <span class="inline-block">hello</span>
+  <!--html속 클래스는 띄어쓰기를 " - " 로 사용-->
+  <div class="마진-패딩"></div>
+</body>
+</html>

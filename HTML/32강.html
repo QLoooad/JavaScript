@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    .box:nth-child(1){ transition-timing-function: linear; }
+    .box:nth-child(2){ transition-timing-function: ease; }
+    .box:nth-child(3){ transition-timing-function: ease-in; }
+    .box:nth-child(4){ transition-timing-function: ease-in-out; }
+    .box:nth-child(5){ transition-timing-function: ease-out; }
+    /* 순서 부여(box클래스의 1번째,2번째...를 저거 넣어라)*/
+
+    .box{
+      width: 100px; height: 100px;
+      background-color: red;
+      transition-duration: 0.5s, 1.5s, 2.5s;
+      /* transition-duration (?초간 애니메이션) 변형 전 스타일에 넣어야 마우스 때도 복원시 애니 적용
+         transition-property에 적힌대로 적힌 초만큼 변형*/
+      transition-delay: 1s, 2s, 4s;
+      transition-property: width, background-color, border-radius;
+      /* 이 순서대로 모든 transition에 적용 후 실행*/
+
+      /*
+      transition - 안쓰고 속성 순서 (속성이름, 시간, 타이밍함수, 딜레이)
+      ex)
+      transition: width 2s ease 0s, (너비를 2초동안 ease로 0초 딜레이)
+                  background-color 2s ease 2s,
+                  border-radius 3s ease 2s,
+      */
+    } 
+
+    .wrap:hover > .box {
+      width: 300px; 
+      background-color: white;
+      /*opacity: 0.1;*/
+      border-radius: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+  <h1>sdsad</h1>
+</body>
+</html>

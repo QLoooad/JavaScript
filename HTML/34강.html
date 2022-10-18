@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    .wrap{
+      width: 100px; height: 100px;
+      border: 5px solid white;
+      margin-bottom: 100px;
+    }
+    .wrap2{
+      width: 100px; height: 100px;
+      border: 5px solid white;
+      margin-bottom: 100px;
+    }
+    .wrap3{
+      width: 100px; height: 100px;
+      border: 5px solid white;
+    }
+    .box1{
+      width: 100px; height: 100px;
+      background-color: red;
+      
+    }
+    .box2{
+      width: 100px; height: 100px;
+      background-color: yellow;
+    }
+    .box3{
+      width: 100px; height: 100px;
+      background-color: purple;
+    }
+    
+
+    .box1{
+      /* 
+      [순서대로 적용됨]   60도 꺾고 스케일 0.5주고 
+      꺾이기 전 원래 도형의 xy좌표를 기준으로 100px  x축으로 이동
+      */
+      transform: 
+      rotate(60deg)
+      scale(0.5)
+      translateX(100px)
+    }
+    /* x로 100px 만큼 움직인후 60도 꺾고 스케일 0.5 */
+    .box2{
+    transform: 
+      translateX(100px)
+      rotate(60deg)
+      scale(0.5)
+    }
+
+
+    .box3{
+      transition: 2s;
+      transform-origin: 100% 100%;
+    }
+    .wrap3:hover > .box3 {
+      transform: 
+      rotate(40deg)
+      scale(0.5);
+      transform-origin: 100% 100%; /* 정중앙 50% 50% (x,y) 오른쪽 아래 기준*/
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="box1"></div>
+  </div>
+  <div class="wrap2">
+    <div class="box2"></div>
+  </div>
+  <div class="wrap3">
+   <div class="box3"></div>
+  </div>
+</body>
+</html>

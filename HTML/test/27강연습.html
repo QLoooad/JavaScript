@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <!--  font-family: 'Gugi', cursive;
+        font-family: 'Nanum Gothic', sans-serif;  -->
+  <style>
+    #container{font-family: 'Nanum Gothic', sans-serif; width: 960px; margin: 0 auto;}
+    #title{font-family: 'Gugi', cursive; margin-top: 10px; margin-left: 8px;}
+    ul>li>a{text-decoration: none;}
+    li{list-style: none; float: left;}
+    #header{position: relative; height: 100px;}
+    #main_gnd{position: absolute; right: 0px; top: 0px;}
+    #main_gnd > ul{overflow: hidden;}
+    #main_gnd > ul > li > a {display: block; padding: 2px 10px; border: 1px solid black;}
+    /* 링크에 패딩 주는 이유 - 글자만 클릭이되는게 아닌 옆 여백도 같이 클릭가능하게하기위해*/
+    #main_gnd > ul > li:first-child > a {border-radius: 10px 0px 0px 10px;}
+    #main_gnd > ul > li:last-child > a {border-radius: 0px 10px 10px 0px;}
+    #main_lnd{position: absolute; right: 0px; bottom: 0px;}
+    #main_lnd > ul{overflow: hidden;}
+    #main_lnd > ul > li > a {display: block; padding: 6px 13px; border: 1px solid black;}
+    #main_lnd > ul > li:first-child > a {border-radius: 10px 0px 0px 10px;}
+    #main_lnd > ul > li:last-child > a {border-radius: 0px 10px 10px 0px;}
+    #center{overflow: hidden;}
+    #section{float: left; width: 760px;}
+    #aside{float: right; width:  190px;}
+    #section > article {border: 1px solid black; padding: 15px; margin-top: 10px;}
+    #aside > article {padding: 15px; margin: 10px;}
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <div id="title">
+        <h1>Rint Development</h1>
+        <h2>HTML + CSS# basic</h2>
+      </div>
+      <nav id="main_gnd">
+        <ul>
+          <li><a href="#">A-1</a></li>
+          <li><a href="#">B-1</a></li>
+          <li><a href="#">C-1</a></li>
+          <li><a href="#">D-1</a></li>
+          <li><a href="#">E-1</a></li>
+        </ul>
+      </nav>
+      <nav id="main_lnd">
+        <ul>
+          <li><a href="#">a-10</a></li>
+          <li><a href="#">b-11</a></li>
+          <li><a href="#">c-12</a></li>
+          <li><a href="#">d-13</a></li>
+          <li><a href="#">e-14</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="center">
+      <div id="section">
+        <article>
+          <h1>Main Aside</h1>
+          <p>Adipisicing dolor officia officia ad qui cillum et enim dolor ex ad est ea. Excepteur tempor tempor elit est voluptate aliquip occaecat laborum nulla. Magna nulla reprehenderit nisi id. Aute ut et occaecat eu non dolor nisi elit dolor occaecat velit excepteur. Sint non incididunt eiusmod quis magna occaecat sint ut consequat exercitation fugiat aliquip. Adipisicing amet laboris pariatur proident dolore quis qui.Qui id dolore culpa sunt mollit fugiat consectetur excepteur nisi non anim reprehenderit culpa ut. Sit occaecat magna nulla dolor occaecat ea cillum nostrud nostrud. Magna consequat id incididunt et nulla. Aliquip eu laboris elit occaecat quis laborum aute. Id ea culpa deserunt sint exercitation exercitation incididunt aute aliquip. Voluptate consequat aute labore in.Commodo elit incididunt enim aute nulla exercitation in nostrud laborum. Reprehenderit ea elit excepteur adipisicing. Officia dolore et reprehenderit mollit esse aute laboris do proident dolor velit. Consequat eu eiusmod tempor in occaecat aliqua minim velit consequat fugiat laborum dolore non.</p>
+        </article>
+        <article>
+          <h1>Main Aside</h1>
+          <p>Adipisicing dolor officia officia ad qui cillum et enim dolor ex ad est ea. Excepteur tempor tempor elit est voluptate aliquip occaecat laborum nulla. Magna nulla reprehenderit nisi id. Aute ut et occaecat eu non dolor nisi elit dolor occaecat velit excepteur. Sint non incididunt eiusmod quis magna occaecat sint ut consequat exercitation fugiat aliquip. Adipisicing amet laboris pariatur proident dolore quis qui.Qui id dolore culpa sunt mollit fugiat consectetur excepteur nisi non anim reprehenderit culpa ut. Sit occaecat magna nulla dolor occaecat ea cillum nostrud nostrud. Magna consequat id incididunt et nulla. Aliquip eu laboris elit occaecat quis laborum aute. Id ea culpa deserunt sint exercitation exercitation incididunt aute aliquip. Voluptate consequat aute labore in.Commodo elit incididunt enim aute nulla exercitation in nostrud laborum. Reprehenderit ea elit excepteur adipisicing. Officia dolore et reprehenderit mollit esse aute laboris do proident dolor velit. Consequat eu eiusmod tempor in occaecat aliqua minim velit consequat fugiat laborum dolore non.</p>
+        </article>
+        <article>
+          <h1>Main Aside</h1>
+          <p>Adipisicing dolor officia officia ad qui cillum et enim dolor ex ad est ea. Excepteur tempor tempor elit est voluptate aliquip occaecat laborum nulla. Magna nulla reprehenderit nisi id. Aute ut et occaecat eu non dolor nisi elit dolor occaecat velit excepteur. Sint non incididunt eiusmod quis magna occaecat sint ut consequat exercitation fugiat aliquip. Adipisicing amet laboris pariatur proident dolore quis qui.Qui id dolore culpa sunt mollit fugiat consectetur excepteur nisi non anim reprehenderit culpa ut. Sit occaecat magna nulla dolor occaecat ea cillum nostrud nostrud. Magna consequat id incididunt et nulla. Aliquip eu laboris elit occaecat quis laborum aute. Id ea culpa deserunt sint exercitation exercitation incididunt aute aliquip. Voluptate consequat aute labore in.Commodo elit incididunt enim aute nulla exercitation in nostrud laborum. Reprehenderit ea elit excepteur adipisicing. Officia dolore et reprehenderit mollit esse aute laboris do proident dolor velit. Consequat eu eiusmod tempor in occaecat aliqua minim velit consequat fugiat laborum dolore non.</p>
+        </article>
+      </div>
+      <div id="aside">
+        <article>
+          <h1>Main Aside</h1>
+          <p>Velit in doloculpa id ex nostrud dolor culpa aliquip. Proident dolor laborum amet ipsum do qui dolor. Aute est ullamco adipisicing irure anim cupidatat sit reprehenderit cillum occaecat excepteur officia. Aliquip pariatur officia esse qui eu reprehenderit reprehenderit ipsum.Incididunt deserunt duis amet exercitation. Laboris in incididunt nostrud enim quis ipsum occaecat duis culpa magna proident mollit duis. Consectetur fugiat ad nisi Lorem cillum nisi consectetur excepteur nostrud. Mollit elit minim ea pariatur fugiat.Magna qui cupidatat labore consequat qui ex incididunt. Nostrud ullamco Lorem eiusmod deserunt. Amet consequat sit mollit occaecat velit cupidatat dolor.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

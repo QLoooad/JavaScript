@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    div{
+      width: 300px; height: 300px; /*내용물의 크기*/
+      padding: 30px;
+      border: 5px solid black;
+      margin: 30px;
+
+      background: red; /* 패딩까지만 적용o, 볼더부터 는 적용x */
+
+      box-sizing: content-box;
+      /* box-sizing: border-box; 콘텐트박스는 내용물의 크기
+                                 볼더 박스는 볼더를 포함한 크기
+                                 를 width와 heigth를 지정*/
+                                 
+      /*전체 너비,높이 
+      width or heiht + 2 * (padding + border + margin)
+      */                          
+
+      /*순서는 높이,너비>패딩>볼더>마진*/
+    }
+  </style>
+</head>
+<body>
+  <div>Lorem incididunt anim sit id officia proident. Do qui cillum in commodo exercitation do quis aute exercitation. Fugiat occaecat sunt ipsum fugiat id ullamco in. Commodo magna nisi do sit dolore sunt. Excepteur incididunt est sint irure deserunt quis qui laboris eiusmod nostrud do duis officia. Duis qui in exercitation adipisicing pariatur aliquip dolore velit exercitation officia enim et labore. Ipsum aliquip esse culpa occaecat excepteur.
+  </div>
+</body>
+</html>

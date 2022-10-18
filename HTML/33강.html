@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    .wrap{
+      position: relative;
+    }
+    .box{
+      width: 100px; height: 100px;
+      background-color: red;
+      position: absolute;
+    }
+
+    .box{
+      animation-name: 키프레임과-같게; /*키프레임 이름*/
+      animation-duration: 1.5s; /*재생시간*/
+      animation-fill-mode: both; 
+      /*both 종료상태 유지, forwards 마지막에서 멈춤, backwards 처음으로 돌아감*/
+      animation-direction: reverse;/*종료 후 어떻게 할것인지*/
+      animation-iteration-count: 1; /*반복횟수*/
+      animation-delay: 2s;
+      animation-timing-function: ease;
+      animation-play-state: running;
+    }
+
+    @keyframes 키프레임과-같게{
+      /*from*/0%{ left: 0px; top: 0px;
+
+      }
+      /*to*/100%{ left: 200px; top: 200px;
+
+      }
+    }
+    a{ top: 400px;
+      position: absolute;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="box"></div>
+    <a href="https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Animations/Using_CSS_animations">
+      animation태그 설명
+    </a>
+  </div>
+</body>
+</html>

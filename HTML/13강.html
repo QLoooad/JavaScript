@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    body>p {color: darkkhaki;}
+    #heading{color: cornflowerblue;}
+    .a.b.c.d.e {color: red;}
+    .a.b.c {color: violet;}
+    .a.b {color: brown;}
+    h1.h {color: black;}
+    h1[title="test1"] {color: blue;} 
+    h2[title]{color: coral;} 
+  </style>
+  <!--바디 아래의 p 태그모두를 바꿔라-->
+  <!-- # 는 아이디 의미[ id="heading"를 가진 것만 바꿈 ]-->
+  <!--스타일에서 class 를 선택 시 . 사용-->
+  <!--1번 스타일 [ abcde가 포함되어있는 class에 레드 ]-->
+  <!--2번 스타일 [ abc가 포함되어있는 class에 바이올렛]-->
+  <!--타이틀은 []대괄호 안에 ex) [title="" or title= ]
+      타이틀 값을 지정하지 않을시 타이틀을 가지고있는 모든 것을 바꿈-->
+  <!--h2에 타이틀을 가진것을 coral색으로 바꿔라[마지막 해석]-->
+  <!--#는 id   . 은 class -->
+
+</head>
+<body>
+  <!-- id는 페이지에 단 1개만 써야함 [중복 불가]
+       [2개 이상 시 자바스크립트에서 문제 야기]-->
+  <!-- class는 중복 가능--> <!--class는 쉼표대신 띄어쓰기 -->
+  <h1 id=heading>아이디는 헤딩</h1>
+  <h1 class="a b c d e">안녕하세요</h1>
+  <h1 class="a b c d">안녕하세요</h1>
+  <h1 class="a b c">안녕하세요</h1>
+  <h1 class="a b">안녕하세요</h1>
+  <h1 class="h">안녕하세요</h1>
+  <br>
+  <h1 title="test1">타이틀입니다.</h1>
+  <h1 title="test2">타이틀입니다.</h1>
+
+  <h2 title="">h2타이틀</h2>
+  <h2 title="">h2타이틀</h2>
+  <h2 title="">h2타이틀</h2>
+  <!-- h2[title=]*3 -->
+
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  <!-- ul>li*5 [ ul 아래에 '>' li 5개 만들어라 ]-->
+  <!--후손을 가진것들은 > 로 -->
+
+  <p>test</p>
+  <p>test</p>
+  <p>test</p>
+
+  <li class="item1"></li>
+  <li class="item2"></li>
+  <li class="item3"></li>
+  
+  <!-- li.item$*3 [li에 item클라스를 순차적으로 3개 만들어줘 ]
+        $를 넣으면 순차적으로 숫자 1,2,3,4---들어감 -->
+
+</body>
+</html>

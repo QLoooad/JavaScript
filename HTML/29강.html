@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>Document</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<!--
+viewport를 아무 모바일페이지에서 가져오면 어떤 화면에서도 
+호환가능한 페이지가 만들어짐
+-->
+  <style>
+    *{margin: 0; padding: 0;}
+    .icon{display: block;}
+    .bg-header_left_button {width: 62px; height: 32px;background: url('./미디어/sprites.png') -1px -1px;}
+    .bg-header_right_button {width: 32px; height: 32px;background: url('./미디어/sprites.png') -65px -1px;}
+
+    #main_header{
+      height: 45px; line-height: 45px;
+      text-align: center; 
+      background: url(./미디어/header_background.png);
+      position: relative;}
+    #main_header>h1{color: white;}
+    .bg-header_left_button{
+      position: absolute; left: 5px; top: 7px;}
+    .bg-header_right_button{
+      position: absolute; right: 5px; top: 7px;}
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div id="main_header">
+      <i class="icon bg-header_left_button"></i>
+      <h1>Mobile</h1>
+      <i class="icon bg-header_right_button"></i>
+    </div>
+  
+  <div id="bottom_gnb">
+    <div><a href="#">버튼</a></div>
+    <div><a href="#">버튼</a></div>
+    <div><a href="#">버튼</a></div>
+    <div><a href="#">버튼</a></div>
+    <div><a href="#">버튼</a></div>
+  </div>
+  <style>
+    #bottom_gnb{
+      width: 100%; 
+      border-bottom: 1px solid black;
+      display: table;
+    }
+    #bottom_gnb>div{
+      text-align: center; 
+      display:table-cell; }
+    #bottom_gnb>div>a{
+      height: 35px; line-height: 35px; display: block;
+      text-decoration: none;
+    }
+  </style>
+  </div>
+</body>
+</html>
